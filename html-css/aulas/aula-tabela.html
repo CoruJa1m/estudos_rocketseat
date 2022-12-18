@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula tabela</title>
+
+</head>
+<body>
+    <h1>criando tabelas</h1>
+    <h2>tabela basica</h2>
+    <table>
+        <tr> <!--table roll vai ser oq ta na tabela tipo a lista e o th a linha da lista -->
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>Mayk</td><!---a td vai ser a que corresponde a th  exemplo no nome  a primeira linha e mayk ja na segunda 35 vai pra idade-->
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>Diego</td>
+            <td>25</td>
+        </tr> 
+    </table>
+
+    <h2>forma de deixar organizado a tabela </h2>
+    <caption>Pessoas por idade</caption> <!--descreve oq ta sendo a tabela ex uma tabela de comida consumida-->
+
+    <thead> <!-- a cabeca da tabela -->
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+    <tbody> <!--o corpo da tabela o conteudo em si -->
+        <tr>
+            <td>Mayk</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>Diego</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+    <tfoot> <!--a resposta da pesquisa como quantas pessoas teve etc...-->
+        <tr>
+            <td>Total:</td>
+            <td>2 Pessoas</td>
+        </tr>
+    </tfoot>
+
+    <table>
+        <caption>produzidos vs vendidos por lojas </caption>
+
+    <colgroup>
+    <col> 
+    <col span="2" style="background-color: blueviolet;">
+    <col span="2"  style="background-color: blue;">
+    </colgroup>
+       <thead>
+        <tr>
+            <th rowspan="2"> </th>
+            <th colspan="2" scope="colgroup">sadia </th>
+            <th colspan="2"scope="colgroup">perdigao </th>
+        </tr>
+        <tr>
+            <th scope="col">  produzidos </th>
+            <th scope="col"> vendidos</th>
+            <th scope="col"> produzidos</th>
+            <th scope="col"> vendidos</th>
+        </tr>
+    </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">vassouras</th>
+                    <td>70</td>
+                    <td>63</td>
+                    <td>10</td>
+                    <td>63</td>
+                
+            </tr>
+
+            <tr>
+                <th scope="row">qboa </th>
+                    <td>27</td>
+                    <td>83</td>
+                    <td>90</td>
+                    <td>40</td>
+                
+            </tr>
+
+            <h2>cabecalho</h2>
+            <p>e oq fica dentro do head onde n aparece no site mais e a configuracao dele exemplo lingua do site,o tipo,favicon ent aki algus </p>
+            <!-- codificação de caracteres especiais -->
+    <meta charset="UTF-8">
+
+    <!-- portabilidade para dispositivos mobiles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--atributos
+    charset-para caracteres ex "utf-8"
+    name -nome da meta 
+    content- conteudo da meta 
+    
+-->
+
+<!--
+    <link> para ícones personalizados
+-->
+
+<!-- favicon básico -->
+<link rel="icon" href="/icons/icon-48x48.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+<!-- iPhone não-Retina, iPod Touch e dispositivos Android 2.1+: -->
+<link rel="apple-touch-icon-precomposed" href="https://developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+
+<!-- iPad de primeira e segunda geração: -->
+<link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+<link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+<link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+<!-- iPhone com tela retina de alta resolução: -->
+<link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+<!-- iPad de terceira geração com tela retina de alta resolução: -->
+<link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+<link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+<link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+<link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+<!--esse sao pro algorirtimo /robo do gooogle ceo para seu site -->
+<meta name="author" content="Mayk Brito"><!--autoria do autor da pagina-->
+
+<meta name="description" content="Um website para iniciantes em programação"><!--o textto que aparece embaixo do link do site noo comeco -->
+<meta name="robots" content="index, follow"><!--comandos para o robo de busca -->
+
+<head>
+    <!-- Open Graph: facebook -->
+    <meta property="og:image" content="https://cdn-images-1.medium.com/max/92/1*TkXVfLTwsHdwpUEjGzdi9w@2x.jpeg">
+    <meta property="og:description" content="Aqui vem um texto para ser mostrado ao compartilhar no facebook">
+    <meta property="og:title" content="Um site da Rocketseat">
+
+    <!-- twitter -->
+    <meta name="twitter:title" content="Rocketseat">
+</head>
+
+
+</head>
+
+
+        </tbody>
+
+    </table>
+
+</body>
+</html>

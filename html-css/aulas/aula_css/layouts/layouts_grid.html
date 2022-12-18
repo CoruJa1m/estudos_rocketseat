@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout grid</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: grid;
+            grid-template-areas: 
+            "header header"
+            "main aside"
+            "footer footer";
+            grid-template-rows: 30px 1fr 40px;
+
+        }
+        header{
+            grid-area: header;
+            background-color: red;
+        }
+
+        main{
+            grid-area: main;
+            background-color: blue;
+        }
+
+        aside{
+            grid-area: aside;
+            background-color: green;
+        }
+
+        footer{
+            grid-area: footer;
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <header>topo</header>
+    <main>conteudo</main>
+    <aside>info adicionais</aside>
+    <footer>rodape</footer>
+</body>
+</html>
